@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ramin Goudarzi Karim</title>
-  </head>
-  <body>
-    <h1>Ramin Goudarzi Karim</h1>
-<p>Postdoc researcher Applied Mathematics, University of Guilan.</p>
-<p>Interested in optimization, applied math, and numerical analysis.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ramin Goudarzi Karim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic homepage of Ramin Goudarzi Karim" />
+  <style>
+    :root{
+      --maxw: 880px;
+      --fg:#111; --muted:#555; --link:#0b66c3; --bg:#fff; --line:#eee;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --fg:#eaeaea; --muted:#bdbdbd; --bg:#121212; --line:#262626; --link:#66a7ff; }
+      body{ background: var(--bg); color: var(--fg); }
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--fg); background:var(--bg);
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    header{
+      border-bottom:1px solid var(--line); background:var(--bg); position:sticky; top:0; z-index:10;
+    }
+    .wrap{ max-width:var(--maxw); margin:0 auto; padding:20px; }
+    .nav{
+      display:flex; gap:18px; flex-wrap:wrap; align-items:center; justify-content:flex-end;
+    }
+    .brand{ margin-right:auto; font-weight:700; font-size:18px; }
+    main{ max-width:var(--maxw); margin:0 auto; padding:24px 20px 60px; }
+    .hero{
+      display:grid; grid-template-columns: 140px 1fr; gap:20px; align-items:center;
+    }
+    .hero img{
+      width:140px; height:140px; object-fit:cover; border-radius:50%;
+      border:1px solid var(--line);
+    }
+    h1{ font-size:28px; margin:0 0 6px; line-height:1.25; }
+    h2{ margin:28px 0 10px; font-size:20px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+    p, li{ color:var(--fg); }
+    .muted{ color:var(--muted); }
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 0; }
+    .chip{ border:1px solid var(--line); padding:4px 8px; border-radius:999px; font-size:13px; color:var(--muted); }
+    .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .card{ border:1px solid var(--line); border-radius:12px; padding:16px; }
+    footer{ border-top:1px solid var(--line); }
+    @media (max-width:720px){
+      .hero{ grid-template-columns:1fr; text-align:center; }
+      .hero img{ margin:0 auto; }
+      .nav{ justify-content:center; }
+      .grid-2{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Ramin Goudarzi Karim</div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+    <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <img src="photo.jpg" alt="Portrait of Ramin Goudarzi Karim" />
+    <div>
+      <h1>Ramin Goudarzi Karim</h1>
+      <p class="muted">PhD Candidate in Applied Mathematics, University of Alabama (expected 2026)</p>
+      <p>
+        I work on optimization, applied mathematics, and numerical analysis. 
+        My current interests include convex/nonconvex optimization, PDE-constrained problems, 
+        and algorithmic design for large-scale numerical methods.
+      </p>
+      <div class="chips">
+        <span class="chip">Optimization</span>
+        <span class="chip">Numerical Analysis</span>
+        <span class="chip">PDE-Constrained Opt.</span>
+        <span class="chip">Semidefinite/Convex</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="margin:0 0 6px;">Current focus</h3>
+        <p class="muted" style="margin:0 0 8px;">Optimization &amp; numerical methods</p>
+        <ul style="margin:0 0 0 16px;">
+          <li>First-order &amp; splitting methods (ADMM/PDHG) for large-scale problems.</li>
+          <li>PDE-constrained optimization &amp; inverse problems.</li>
+          <li>Semidefinite/convex relaxations and tensor-structured problems.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 6px;">Tools</h3>
+        <p class="muted" style="margin:0 0 8px;">Programming &amp; computation</p>
+        <ul style="margin:0 0 0 16px;">
+          <li>Python / MATLAB / Julia; Gurobi; basic C++.</li>
+          <li>Numerical linear algebra, sparse matrices, HPC basics.</li>
+          <li>Reproducible research (Git/GitHub).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications & Preprints</h2>
+    <p class="muted">(*List a few. You can link to arXiv/DOI. Add more as needed.*)</p>
+    <ul>
+      <li><strong>Title of your paper</strong> — Journal/venue, year. <a href="#">PDF</a> · <a href="#">Code</a></li>
+      <li><strong>Another title</strong> — Preprint, year. <a href="#">arXiv</a></li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>Course Title</strong>, Institution, Term — brief note (e.g., syllabus, materials).</li>
+      <li><strong>Course Title</strong>, Institution, Term — brief note.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ramin.goudarzi.karim@ua.edu">ramin.goudarzi.karim@ua.edu</a></p>
+    <p>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> ·
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="font-size:13px; color:var(--muted);">
+    © <span id="year"></span> Ramin Goudarzi Karim · This is a simple static page.
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>
